@@ -5,7 +5,7 @@ Branch: main
 
 Upload these two under ota/ on main:
 
-  ota/version.txt     one line: 1.16
+  ota/version.txt     one line: 1.18
   ota/lt_7in.bin      the exported firmware
 
 The glass reads:
