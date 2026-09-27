@@ -1,0 +1,24 @@
+Live Trains — GitHub update files
+
+Repo (public): https://github.com/stefi01/Live-train-Tracker
+Branch: main
+
+Upload these two under ota/ on main:
+
+  ota/version.txt     one line: 1.16
+  ota/lt_7in.bin      the exported firmware
+
+The glass reads:
+  https://raw.githubusercontent.com/stefi01/Live-train-Tracker/main/ota/version.txt
+  https://raw.githubusercontent.com/stefi01/Live-train-Tracker/main/ota/lt_7in.bin
+
+Make the .bin (Arduino IDE 1.8):
+  Open C:\Users\skipp\Documents\Arduino\live_trains\live_trains.ino
+  Tools: ESP32S3 Dev Module, OPI PSRAM, 16MB, 16M Flash (3MB APP/OTA)
+  Sketch → Export compiled Binary
+  File appears next to the sketch:
+    live_trains.ino.esp32s3.bin
+  Copy that file here and name it:
+    ota/lt_7in.bin
+
+Do not upload a .hex.
