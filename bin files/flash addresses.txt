@@ -1,0 +1,19 @@
+ESP32-8048S070C 7 inch. These four files are the 16MB build from 25 Nov 2026.
+
+Board: ESP32S3 Dev Module
+PSRAM: OPI PSRAM
+Flash Size: 16MB
+USB CDC On Boot: Enabled
+Partition Scheme: 16M Flash (3MB APP/9.9MB FATFS)
+Flash Mode: DIO
+Flash Frequency: 80MHz
+Flash Size flag: 16MB
+
+0x0      live_trains.ino.bootloader.bin
+0x8000   live_trains.ino.partitions.bin
+0xe000   boot_app0.bin
+0x10000  live_trains.ino.bin
+
+All four files on a blank chip. The bootloader for this board starts at 0x0.
+The app is live_trains.ino.bin and it goes at 0x10000. A later compile replaces that one file only.
+Screen updates download the same app as ota/lt_7in.bin.
